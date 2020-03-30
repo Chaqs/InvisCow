@@ -276,81 +276,88 @@ var spli = text.split(" ");
   if(spli[0] == ".") {
   preventDefault();
   reach = spli[1];
-  clientMessage("Mod => set hitbox size to "+spli[1]);
+  clientMessage("[InvisCow] set hitbox size to "+spli[1]);
  }
  
  if(spli[0] == "/") {
   preventDefault();
   speed = spli[1];
-  clientMessage("Mod => set Cheat Engine speed to "+spli[1]);
+  clientMessage("[InvisCow] set Cheat Engine speed to "+spli[1]);
  }
  
   if(spli[0] == ",") {
   preventDefault();
   percent = spli[1];
-  clientMessage("Mod => set Knockback Percent to "+spli[1]);
+  clientMessage("[InvisCow] set Knockback Percent to "+spli[1]);
  }
  
   if(text == ".hitbox"){
   preventDefault();
   if(hitbox == false){
   hitbox = true;
-  clientMessage("Mod => Hitbox enabled");
+  clientMessage("[InvisCow] Hitbox enabled");
+  clientMessage("Run the command again to disable Hitbox.");
   }else{
   hitbox = false;
-  clientMessage("Mod => Hitbox disabled");
+  clientMessage("[InvisCow] Hitbox disabled");
+	  
   }}
   
   if(text == ".ce"){
   preventDefault();
   if(ce == false){
   ce = true;
-  clientMessage("Mod => CheatEngine enabled");
+  clientMessage("[InvisCow] CheatEngine enabled");
+  clientMessage("Run the command again to disable CheatEngine.");
   }else{
   ce = false;
   ModPE.setGameSpeed(20);
-  clientMessage("Mod => CheatEngine disabled");
+  clientMessage("[InvisCow] CheatEngine disabled");
   }}
   
   if(text == ".bce"){
   preventDefault();
   if(bce == false){
   bce = true;
-  clientMessage("Mod => BlatantCheatEngine enabled");
+  clientMessage("[InvisCow] BlatantCheatEngine enabled");
+  clientMessage("Run the command again to disable BlatantCheatEngine.");
   }else{
   bce = false;
   ModPE.setGameSpeed(20);
-  clientMessage("Mod => BlatantCheatEngine disabled");
+  clientMessage("[InvisCow] BlatantCheatEngine disabled");
   }}
 
   if(text == ".glide"){
   preventDefault();
   if(glide == false){
   glide = true;
-  clientMessage("Mod => Glide enabled");
+  clientMessage("[InvisCow] Glide enabled");
+  clientMessage("Run the command again to disable Glide.");
   }else{
   glide = false;
-  clientMessage("Mod => Glide disabled");
+  clientMessage("[InvisCow] Glide disabled");
   }}
   
   if(text == ".taptp"){
   preventDefault();
   if(taptp == false){
   taptp = true;
-  clientMessage("Mod => TapTeleport enabled");
+  clientMessage("[InvisCow] TapTeleport enabled");
+  clientMessage("Run the command again to disable TapTeleport.");
   }else{
   taptp = false;
-  clientMessage("Mod => TapTeleport disabled");
+  clientMessage("[InvisCow] TapTeleport disabled");
   }}
   
   if(text == ".tapjet"){
   preventDefault();
   if(tapjet == false){
   tapjet = true;
-  clientMessage("Mod => TapJet enabled");
+  clientMessage("[InvisCow] TapJet enabled");
+  clientMessage("Run the command again to disable TapJet.");
   }else{
   tapjet = false;
-  clientMessage("Mod => TapJet disabled");
+  clientMessage("[InvisCow] TapJet disabled");
   }}
   
   if(text == ".b"){
@@ -363,7 +370,8 @@ var spli = text.split(" ");
   fly = true;
   hitaim = true;
   taptp = true;
-  clientMessage("Mod => BehindHit enabled");
+  clientMessage("[InvisCow] BehindHit enabled");
+  clientMessage("Run the command again to disable BehindHit.");
   }else{
   behindhit = false;
   hitbox = false;
@@ -371,17 +379,18 @@ var spli = text.split(" ");
   fly = false;
   hitaim = false;
   taptp = false;
-  clientMessage("Mod => BehindHit disabled");
+  clientMessage("[InvisCow] BehindHit disabled");
   }}
   
   if(text == ".hitaim"){
   preventDefault();
   if(hitaim == false){
   hitaim = true;
-  clientMessage("Mod => HitAim enabled");
+  clientMessage("[InvisCow] HitAim enabled");
+  clientMessage("Run the command again to disable HitAim.");
   }else{
   hitaim = false;
-  clientMessage("Mod => HitAim disabled");
+  clientMessage("[InvisCow] HitAim disabled");
   }}
   
   if(text == ".switcher"){
@@ -392,30 +401,33 @@ var spli = text.split(" ");
   ss = false;
   ss3 = false;
   ss4 = false;
-  clientMessage("Mod => Switcher enabled");
+  clientMessage("[InvisCow] Switcher enabled");
+  clientMessage("Run the command again to disable Switcher.");
   }else{
   switcher = false;
-  clientMessage("Mod => Switcher disabled");
+  clientMessage("[InvisCow] Switcher disabled");
   }}
   
   if(text == ".saddle"){
   preventDefault();
   if(saddle == false){
   saddle = true;
-  clientMessage("Mod => Saddle enabled");
+  clientMessage("[InvisCow] Saddle enabled");
+  clientMessage("Run the command again to disable Saddle.");
   }else{
   saddle = false;
-  clientMessage("Mod => Saddle disabled");
+  clientMessage("[InvisCow] Saddle disabled");
   }}
   
   if(text == ".showname"){
   preventDefault();
   if(showname == false){
   showname = true;
-  clientMessage("Mod => ShowName enabled");
+  clientMessage("[InvisCow] ShowName enabled");
+  clientMessage("Run the command again to disable ShowName.");
   }else{
   showname = false;
-  clientMessage("Mod => ShowName disabled");
+  clientMessage("[InvisCow] ShowName disabled");
   }}
   
   if(text == ".l"){
@@ -426,13 +438,14 @@ var spli = text.split(" ");
   showname = true;
   glide = true;
   taptp = true;
-  clientMessage("Mod => ReachAura enabled");
+  clientMessage("[InvisCow] ReachAura enabled");
+  clientMessage("Run the command again to disable ReachAura.");
   }else{
   reachaura = false;
   hitbox = false;
   glide = false;
   taptp = false;
-  clientMessage("Mod => ReachAura disabled");
+  clientMessage("[InvisCow] ReachAura disabled");
   }}
   
   if(text == ".reachaura"){
@@ -444,34 +457,37 @@ var spli = text.split(" ");
   glide = false;
   taptp = true;
   fly = true;
-  clientMessage("Mod => ReachAura enabled");
+  clientMessage("[InvisCow] ReachAura enabled");
+  clientMessage("Run the command again to disable ReachAura.");
   }else{
   reachaura = false;
   hitbox = false;
   glide = false;
   taptp = false;
   fly = false;
-  clientMessage("Mod => ReachAura disabled");
+  clientMessage("[InvisCow] ReachAura disabled");
   }}
   
   if(text == ".randomtp"){
   preventDefault();
   if(randomtp == false){
   randomtp = true;
-  clientMessage("Mod => RandomTP for MM enabled");
+  clientMessage("[InvisCow] RandomTP for MM enabled");
+  clientMessage("Run the command again to disable RandomTP.");
   }else{
   randomtp = false;
-  clientMessage("Mod => RandomTP for MM disabled");
+  clientMessage("[InvisCow] RandomTP for MM disabled");
   }}
   
   if(text == ".bow"){
   preventDefault();
   if(bow == false){
   bow = true;
-  clientMessage("Mod => BowAimbot for MM enabled");
+  clientMessage("[InvisCow] BowAimbot for MM enabled");
+  clientMessage("Run the command again to disable BowAimbot.");
   }else{
   bow = false;
-  clientMessage("Mod => BowAimbot for MM disabled");
+  clientMessage("[InvisCow] BowAimbot for MM disabled");
   }}
   
   if(text == ".fly"){
@@ -479,41 +495,45 @@ var spli = text.split(" ");
   if(fly == false){
   fly = true;
   glide = false;
-  clientMessage("Mod => Fly enabled");
+  clientMessage("[InvisCow] Fly enabled");
+  clientMessage("Run the command again to disable Fly.");
   }else{
   fly = false;
   glide = false;
-  clientMessage("Mod => Fly disabled");
+  clientMessage("[InvisCow] Fly disabled");
   }}
   
   if(text == ".elytra"){
   preventDefault();
   if(elytra == false){
   elytra = true;
-  clientMessage("Mod => Elytra enabled");
+  clientMessage("[InvisCow] Elytra enabled");
+  clientMessage("Run the command again to disable Elytra.");
   }else{
   elytra = false;
-  clientMessage("Mod => Elytra disabled");
+  clientMessage("[InvisCow] Elytra disabled");
   }}
-  
+  -
   if(text == ".hitspam"){
   preventDefault();
   if(hitspam == false){
   hitspam = true;
-  clientMessage("Mod => Hitspam enabled");
+  clientMessage("[InvisCow] Hitspam enabled");
+  clientMessage("Run the command again to disable Hitspam.");
   }else{
   hitspam = false;
-  clientMessage("Mod => Hitspam disabled");
+  clientMessage("[InvisCow] Hitspam disabled");
   }}
   
   if(text == ".forcetp"){
   preventDefault();
   if(forcetp == false){
   forcetp = true;
-  clientMessage("Mod => ForceTP enabled");
+  clientMessage("[InvisCow] ForceTP enabled");
+  clientMessage("Run the command again to disable ForceTP.");
   }else{
   forcetp = false;
-  clientMessage("Mod => ForceTP disabled");
+  clientMessage("[InvisCow] ForceTP disabled");
   }}
   
   if(text == ".velocity"){
@@ -522,20 +542,22 @@ var spli = text.split(" ");
   velocity = true;
   ce = false;
   ModPE.setGameSpeed(20);
-  clientMessage("Mod => Velocity enabled");
+  clientMessage("[InvisCow] Velocity enabled");
+  clientMessage("Run the command again to disable Velocity.");
   }else{
   velocity = false;
-  clientMessage("Mod => Velocity disabled");
+  clientMessage("[InvisCow] Velocity disabled");
   }}
   
   if(text == ".gamemode"){
   preventDefault();
   if(gamemode == false){
   gamemode = true;
-  clientMessage("Mod => Gamemode enabled");
+  clientMessage("[InvisCow] Gamemode enabled");
+  clientMessage("Run the command again to disable Gamemode.");
   }else{
   gamemode = false;
-  clientMessage("Mod => Gamemode disabled");
+  clientMessage("[InvisCow] Gamemode disabled");
   }}
   
   if(text == ".sprint"){
@@ -544,11 +566,12 @@ var spli = text.split(" ");
 	  sprint = true;
 	  ce = false;
 	  ModPE.setGameSpeed(20);
-	  clientMessage("Mod => AutoSprint enabled");
+	  clientMessage("[InvisCow] AutoSprint enabled");
+	  clientMessage("Run the command again to disable AutoSprint.");
   for(let i = 0; i <= 255; i++) {
   Block.setFriction(i, 0.525);
   }}else{
-  clientMessage("Mod => AutoSprint disabled");
+  clientMessage("[InvisCow] AutoSprint disabled");
   sprint = false;
   Player.setHunger(20);
   for(var i = 0; i < 406; i++){
@@ -564,30 +587,33 @@ Block.setFriction(266, .4);
   preventDefault();
   if(tw == false){
   tw = true;
-  clientMessage("Mod => TreasureWars Helper enabled");
+  clientMessage("[InvisCow] TreasureWars Helper enabled");
+  clientMessage("Run the command again to disable TreasureWars Helper.");
   }else{
   tw = false;
-  clientMessage("Mod => TreasureWars Helper disabled");
+  clientMessage("[InvisCow] TreasureWars Helper disabled");
   }}
   
   if(text == ".sk"){
   preventDefault();
   if(sk == false){
   sk = true;
-  clientMessage("Mod => Spawnkill Helper enabled");
+  clientMessage("[InvisCow] Spawnkill Helper enabled");
+  clientMessage("Run the command again to disable Spawnkill Helper.");
   }else{
   sk = false;
-  clientMessage("Mod => Spawnkill Helper disabled");
+  clientMessage("[InvisCow] Spawnkill Helper disabled");
   }}
   
   if(text == ".waterfly"){
   preventDefault();
   if(waterfly == false){
   waterfly = true;
-  clientMessage("Mod => Waterfly enabled");
+  clientMessage("[InvisCow] Waterfly enabled");
+  clientMessage("Run the command again to disable Hitbox.");
   }else{
   waterfly = false;
-  clientMessage("Mod => Waterfly disabled");
+  clientMessage("[InvisCow] Waterfly disabled");
   }}
   
   if(text == ".ss"){
@@ -598,10 +624,11 @@ Block.setFriction(266, .4);
   ss4 = false;
   showname = true;
   switcher = false;
-  clientMessage("Mod => SuperSwitcher enabled");
+  clientMessage("[InvisCow] SuperSwitcher enabled");
+  clientMessage("Run the command again to disable SuperSwitcher.");
   }else{
   ss = false;
-  clientMessage("Mod => SuperSwitcher disabled");
+  clientMessage("[InvisCow] SuperSwitcher disabled");
   }}
   
   if(text == ".3switcher"){
@@ -612,10 +639,11 @@ Block.setFriction(266, .4);
   ss4 = false;
   showname = true;
   switcher = false;
-  clientMessage("Mod => TripleSwitcher enabled");
+  clientMessage("[InvisCow] TripleSwitcher enabled");
+  clientMessage("Run the command again to disable Hitbox.");
   }else{
   ss3 = false;
-  clientMessage("Mod => TripleSwitcher disabled");
+  clientMessage("[InvisCow] TripleSwitcher disabled");
   }}
   
   if(text == ".4switcher"){
@@ -626,10 +654,11 @@ Block.setFriction(266, .4);
   ss3 = false;
   showname = true;
   switcher = false;
-  clientMessage("Mod => QuadSwitcher enabled");
+  clientMessage("[InvisCow] QuadSwitcher enabled");
+  clientMessage("Run the command again to disable QuadSwitcher.");
   }else{
   ss4 = false;
-  clientMessage("Mod => QuadSwitcher disabled");
+  clientMessage("[InvisCow] QuadSwitcher disabled");
   }}
   
   if(text == ".v"){
@@ -641,12 +670,13 @@ Block.setFriction(266, .4);
   showname = true;
   switcher = true;
   tapjet = true;
-  clientMessage("Mod => VersaiSettings enabled");
+  clientMessage("[InvisCow] VersaiSettings enabled");
+  clientMessage("Run the command again to disable VersaiSettings.");
   }else{
   v = false;
   tapjet = false;
   reach = 1.2;
-  clientMessage("Mod => VersaiSettings disabled");
+  clientMessage("InvisCow] VersaiSettings disabled");
   }}
   
   if(text == ".autoswitch"){
@@ -654,20 +684,22 @@ Block.setFriction(266, .4);
   if(autoswitch == false){
   autoswitch = true;
   showname = true;
-  clientMessage("Mod => AutoSwitcher enabled");
+  clientMessage("[InvisCow] AutoSwitcher enabled");
+  clientMessage("Run the command again to disable AutoSwitcher.");
   }else{
   autoswitch = false;
-  clientMessage("Mod => AutoSwitcher disabled");
+  clientMessage("[InvisCow] AutoSwitcher disabled");
   }}
   
   if(text == ".night"){
   preventDefault();
   if(night == false){
   night = true;
-  clientMessage("Mod => Night enabled");
+  clientMessage("[InvisCow] Night enabled");
+  clientMessage("Run the command again to disable Night.");
   }else{
   night = false;
-  clientMessage("Mod => Night disabled");
+  clientMessage("[InvisCow] Night disabled");
   }}
   
   if(text == ".stackpots"){
@@ -700,30 +732,33 @@ Item.setHandEquipped(i, true);
 	Item.setHandEquipped(438, true);
 
 }
-  clientMessage("Mod => Stackpots enabled");
+  clientMessage("[InvisCow] Stackpots enabled");
+  clientMessage("Run the command again to disable Stackpots.");
   }else{
   stackpots = false;
-  clientMessage("Mod => Stackpots disabled");
+  clientMessage("[InvisCow] Stackpots disabled");
   }}
   
     if(text == ".scaffold"){
   preventDefault();
   if(scaffold == false){
   scaffold = true;
-  clientMessage("Mod => Scaffold enabled");
+  clientMessage("[InvisCow] Scaffold enabled");
+  clientMessage("Run the command again to disable Scaffold.");
   }else{
   scaffold = false;
-  clientMessage("Mod => Scaffold disabled");
+  clientMessage("[InvisCow] Scaffold disabled");
   }}
   
   if(text == ".spam"){
   preventDefault();
   if(spam == false){
   spam = true;
-  clientMessage("Mod => Spam enabled");
+  clientMessage("[InvisCow] Spam enabled");
+  clientMessage("Run the command again to disable Spam.");
   }else{
   spam = false;
-  clientMessage("Mod => Spam disabled");
+  clientMessage("[InvisCow] Spam disabled");
   }}
 }
 
